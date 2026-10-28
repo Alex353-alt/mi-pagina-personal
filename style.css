@@ -72,17 +72,17 @@ main {
     min-height: 75vh;
 }
 
-/* Estilo general de las secciones. */
+
 .seccion {
     padding: 70px 9%;
 }
 
-/* IMPORTANTE: oculta por completo las secciones no seleccionadas. */
+
 .seccion.oculto {
     display: none !important;
 }
 
-/* Diseño de Inicio. */
+
 .hero {
     min-height: 72vh;
     display: grid;
@@ -174,7 +174,7 @@ h3 {
     text-align: center;
 }
 
-/* Contenido de Formación, Experiencia, Habilidades y Sobre mí. */
+
 .contenido {
     max-width: 1150px;
     margin: 0 auto;
@@ -229,7 +229,7 @@ footer p {
     margin: 0;
 }
 
-/* Ajustes para pantallas pequeñas. */
+
 @media (max-width: 760px) {
     .topbar {
         padding: 18px 5%;
