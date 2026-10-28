@@ -12,15 +12,15 @@
             return;
         }
 
-        // Ocultar todas las secciones.
+      
         secciones.forEach(function (seccion) {
             seccion.classList.add("oculto");
         });
 
-        // Mostrar únicamente la sección seleccionada.
+      
         elegida.classList.remove("oculto");
 
-        // Actualizar el botón activo del menú.
+        
         botones.forEach(function (elemento) {
             elemento.classList.remove("activo");
         });
@@ -40,10 +40,10 @@
         window.scrollTo(0, 0);
     }
 
-    // Permitir que los botones del HTML llamen a esta función.
+    
     window.mostrarSeccion = mostrarSeccion;
 
-    // Comprobar que el documento esté listo.
+  
     function iniciarPagina() {
         const secciones = document.querySelectorAll(".seccion");
 
@@ -52,7 +52,7 @@
             return;
         }
 
-        // Mostrar Inicio al cargar la página.
+        
         mostrarSeccion("inicio");
     }
 
