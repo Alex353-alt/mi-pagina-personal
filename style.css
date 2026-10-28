@@ -1,0 +1,263 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #17283f;
+    --azul-claro: #243b57;
+    --crema: #f7f4ee;
+    --blanco: #ffffff;
+    --dorado: #b69a70;
+    --texto: #263243;
+    --gris: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--crema);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.topbar {
+    background: var(--azul);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 7%;
+    flex-wrap: wrap;
+}
+
+.brand {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand small {
+    color: var(--dorado);
+    display: block;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.nav-link {
+    border: 0;
+    background: transparent;
+    color: var(--blanco);
+    padding: 9px 11px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.activo {
+    background: var(--azul-claro);
+    color: #e8d3ad;
+}
+
+main {
+    min-height: 75vh;
+}
+
+/* Estilo general de las secciones. */
+.seccion {
+    padding: 70px 9%;
+}
+
+/* IMPORTANTE: oculta por completo las secciones no seleccionadas. */
+.seccion.oculto {
+    display: none !important;
+}
+
+/* Diseño de Inicio. */
+.hero {
+    min-height: 72vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 45px;
+    background: var(--crema);
+}
+
+.etiqueta {
+    color: #92764d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--azul);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 0 0 20px;
+}
+
+h1 span {
+    display: block;
+    color: var(--azul-claro);
+}
+
+h2 {
+    font-size: 34px;
+    margin: 0 0 28px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 19px;
+}
+
+.introduccion,
+.texto-seccion {
+    max-width: 650px;
+    color: #505967;
+    font-size: 17px;
+}
+
+.boton-principal {
+    background: var(--azul);
+    color: var(--blanco);
+    border: 0;
+    padding: 12px 22px;
+    margin-top: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton-principal:hover {
+    background: var(--azul-claro);
+}
+
+.hero-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seal {
+    width: 230px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(182, 154, 112, 0.75);
+    color: var(--dorado);
+    text-align: center;
+}
+
+.seal-word {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Contenido de Formación, Experiencia, Habilidades y Sobre mí. */
+.contenido {
+    max-width: 1150px;
+    margin: 0 auto;
+    min-height: 65vh;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    border: 1px solid #e6e0d5;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.tarjeta p {
+    color: #555e6b;
+    margin-bottom: 0;
+}
+
+.tarjeta .detalle {
+    color: #92764d;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.sobre-mi {
+    max-width: 800px;
+    font-size: 17px;
+    color: #505967;
+}
+
+.nota {
+    color: var(--gris);
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+footer {
+    background: var(--azul);
+    color: #e5e7eb;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajustes para pantallas pequeñas. */
+@media (max-width: 760px) {
+    .topbar {
+        padding: 18px 5%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .seccion {
+        padding: 45px 7%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero-side {
+        justify-content: flex-start;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+}

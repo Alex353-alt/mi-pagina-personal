@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web personal | Alex Bruno León Inga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#" onclick="mostrarSeccion('inicio'); return false;">
+            PÁGINA WEB
+            <small>PERSONAL</small>
+        </a>
+
+        <nav>
+            <button class="nav-link activo" onclick="mostrarSeccion('inicio', this)">Inicio</button>
+            <button class="nav-link" onclick="mostrarSeccion('formacion', this)">Formación</button>
+            <button class="nav-link" onclick="mostrarSeccion('experiencia', this)">Experiencia</button>
+            <button class="nav-link" onclick="mostrarSeccion('habilidades', this)">Habilidades</button>
+            <button class="nav-link" onclick="mostrarSeccion('sobre-mi', this)">Sobre mí</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion hero">
+            <div class="hero-text">
+                <p class="etiqueta">ESTUDIANTE DE DERECHO</p>
+                <h1>Hola, soy <span>Alex Bruno León Inga</span></h1>
+                <p class="introduccion">
+                    Soy estudiante de Derecho y me interesa aprender sobre el ámbito
+                    jurídico, comprender cómo se aplican las normas y desarrollar
+                    mis conocimientos durante mi formación universitaria.
+                </p>
+                <button class="boton-principal" onclick="mostrarSeccion('contacto')">
+                    Contacto
+                </button>
+            </div>
+
+            <div class="hero-side">
+                <div class="seal">
+                    <span class="seal-word">DERECHO</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="seccion contenido oculto">
+            <p class="etiqueta">MIS ESTUDIOS</p>
+            <h2>Formación académica</h2>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Universidad Científica del Sur</h3>
+                    <p>Actualmente estudio la carrera de Derecho y continúo aprendiendo sobre las distintas áreas jurídicas.</p>
+                    <p class="detalle">Sexto ciclo</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>ICPNA</h3>
+                    <p>He estudiado inglés y aprendido vocabulario y expresiones básicas para comunicarme en este idioma.</p>
+                    <p class="detalle">Nivel básico</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Aprendizaje continuo</h3>
+                    <p>Me interesa complementar mis estudios con la lectura, la investigación y el aprendizaje de nuevas herramientas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="seccion contenido oculto">
+            <p class="etiqueta">EXPERIENCIA</p>
+            <h2>Actividades y aprendizaje jurídico</h2>
+            <p class="texto-seccion">
+                Me interesa desarrollar habilidades relacionadas con el trabajo
+                jurídico y aprender cómo se realizan las tareas de apoyo legal.
+            </p>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Redacción de documentos</h3>
+                    <p>Preparación y revisión de escritos, procurando que las ideas estén ordenadas y el documento sea claro.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Expedientes civiles</h3>
+                    <p>Revisión y organización de documentos para identificar información importante de un caso.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Búsqueda de normas</h3>
+                    <p>Consulta de artículos legales y fuentes jurídicas para comprender problemas relacionados con el Derecho.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Organización documental</h3>
+                    <p>Ordenar información y documentos para facilitar su lectura y consulta.</p>
+                </article>
+            </div>
+            <p class="nota">
+               
+            </p>
+        </section>
+
+        <section id="habilidades" class="seccion contenido oculto">
+            <p class="etiqueta">MIS CAPACIDADES</p>
+            <h2>Habilidades</h2>
+            <p class="texto-seccion">
+                Estas son algunas de las habilidades que busco desarrollar durante
+                mis estudios y que pueden ser útiles para mi formación profesional.
+            </p>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Redacción</h3>
+                    <p>Organizar ideas y redactar textos de manera clara y ordenada.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Investigación jurídica</h3>
+                    <p>Buscar información legal y revisar normas relacionadas con un tema.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Organización</h3>
+                    <p>Mantener documentos e información ordenados para consultarlos fácilmente.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Responsabilidad</h3>
+                    <p>Tomar en serio las tareas asignadas y procurar cumplirlas a tiempo.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Trabajo en equipo</h3>
+                    <p>Escuchar otras ideas y colaborar para cumplir objetivos comunes.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Inglés básico</h3>
+                    <p>Conocimientos iniciales del idioma adquiridos en el ICPNA.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion contenido oculto">
+            <p class="etiqueta">UN POCO MÁS SOBRE MÍ</p>
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi">
+                <p>Estudio Derecho porque me interesa conocer las normas que organizan la sociedad y entender cómo se aplican a situaciones de la vida cotidiana.</p>
+                <p>En mi tiempo libre me gusta escuchar música, porque me ayuda a relajarme y acompañar distintos momentos del día. También tengo un especial aprecio por los animales.</p>
+                <p>Me gusta compartir momentos con mis amistades, conversar y conocer diferentes puntos de vista. Considero importante mantener un equilibrio entre los estudios y la vida personal.</p>
+                <p>Entre mis objetivos están continuar avanzando en la carrera, aprender cosas nuevas y ganar experiencia que me ayude a desarrollarme profesionalmente.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion contenido oculto">
+            <p class="etiqueta">MIS DATOS</p>
+            <h2>Contacto</h2>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Correo electrónico</h3>
+                    <p><a href="mailto:ialeonb353@gmail.com">ialeonb353@gmail.com</a></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Teléfono</h3>
+                    <p><a href="tel:+51944564994">944 564 994</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alex Bruno León Inga · Página web personal</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id, boton) {
+            const secciones = document.querySelectorAll(".seccion");
+            const botones = document.querySelectorAll(".nav-link");
+            const elegida = document.getElementById(id);
+
+            if (!elegida) return;
+
+            secciones.forEach(function(seccion) {
+                seccion.classList.add("oculto");
+            });
+
+            elegida.classList.remove("oculto");
+
+            botones.forEach(function(elemento) {
+                elemento.classList.remove("activo");
+            });
+
+            if (boton && boton.classList.contains("nav-link")) {
+                boton.classList.add("activo");
+            } else {
+                botones.forEach(function(elemento) {
+                    const accion = elemento.getAttribute("onclick");
+                    if (accion && accion.includes("'" + id + "'")) {
+                        elemento.classList.add("activo");
+                    }
+                });
+            }
+
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
